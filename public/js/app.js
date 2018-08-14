@@ -5061,11 +5061,7 @@ var Subject = function (_Component) {
     _createClass(Subject, [{
         key: 'render',
         value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1__styles__["a" /* SubjectDiv */],
-                null,
-                'test'
-            );
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__styles__["a" /* SubjectDiv */], null);
         }
     }]);
 
@@ -38999,7 +38995,7 @@ var VerticalLine = function (_React$Component) {
                 null,
                 this.props.all && this.props.all.map(function (tweet) {
                     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
+                        'li',
                         { key: tweet.id },
                         tweet.text
                     );

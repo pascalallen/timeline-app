@@ -38,7 +38,7 @@ class VerticalLine extends React.Component {
         return (
             <StyledDiv>
                 {this.props.all && this.props.all.map((tweet) => {
-                    return <p key={tweet.id}>{tweet.text}</p>
+                    return <li key={tweet.id}>{tweet.text}</li>
                 })}
             </StyledDiv>
         );
