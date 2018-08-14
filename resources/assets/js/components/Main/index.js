@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import ReactDOM from 'react-dom';
 import VerticalLine from '../VerticalLine';
 import Subject from '../Subject';
+import {SubjectLeft, SubjectRight} from './styles';
 
-export default class Main extends Component {
+class App extends React.Component {
     render() {
         return (
             <div className="container">
-                <Subject />
+                <SubjectLeft />
                 <VerticalLine />
-                <Subject />
+                <SubjectRight />
             </div>
         );
     }
 }
 
-if (document.getElementById('root')) {
-    ReactDOM.render(<Main />, document.getElementById('root'));
-}
+export default App;

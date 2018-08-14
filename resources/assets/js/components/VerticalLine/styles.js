@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LineDiv = styled.div`
+export const StyledDiv = styled.div`
     border-left: 1px solid grey;
     min-height: 100%;
     position: absolute;
