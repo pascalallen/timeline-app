@@ -27,7 +27,7 @@ export function fetchAll(endpoint, optionalParams = {}) {
     .then((response) => {
       dispatch({
         type: "FETCH_ALL_FULFILLED",
-        payload: response.data
+        payload: response
       })
     })
     .catch((err) => {

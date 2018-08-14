@@ -39053,7 +39053,7 @@ function fetchAll(endpoint) {
     }).then(function (response) {
       dispatch({
         type: "FETCH_ALL_FULFILLED",
-        payload: response.data
+        payload: response
       });
     }).catch(function (err) {
       dispatch({ type: "FETCH_ALL_REJECTED", payload: err });
