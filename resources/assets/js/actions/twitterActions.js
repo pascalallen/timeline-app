@@ -1,6 +1,6 @@
 import axios from "axios/index";
 
-export function fetchSingle(endpoint, data){
+export function fetchSingleTweet(endpoint, data){
   return function(dispatch) {
     dispatch({type: "FETCH_SINGLE"});
     axios.post(endpoint, {
@@ -18,7 +18,7 @@ export function fetchSingle(endpoint, data){
   }
 }
 
-export function fetchAll(endpoint, optionalParams = {}) {
+export function fetchAllTweets(endpoint, optionalParams = {}) {
   return function(dispatch) {
     dispatch({type: "FETCH_ALL"});
     axios.get(endpoint, {
