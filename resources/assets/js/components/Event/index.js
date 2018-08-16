@@ -14,7 +14,7 @@ class Event extends React.Component {
     render() {
         return (
             <div>
-    {console.log(this.props)}
+                <img src="/images/twitter-icon.png" />
             </div>
         );
     }

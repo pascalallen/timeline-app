@@ -41928,7 +41928,7 @@ var Event = function (_React$Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 null,
-                console.log(this.props)
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/images/twitter-icon.png' })
             );
         }
     }]);
