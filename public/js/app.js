@@ -38932,7 +38932,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_twitterActions__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Event__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__TwitterEvent__ = __webpack_require__(116);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38996,8 +38996,7 @@ var VerticalLine = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_3__styles__["a" /* StyledDiv */],
                 null,
                 this.props.allTweets && this.props.allTweets.map(function (tweet) {
-                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Event__["a" /* default */], { key: tweet.id, props: tweet });
-                    // return <li key={tweet.id}>{tweet.text}</li>
+                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__TwitterEvent__["a" /* default */], { key: tweet.id, props: tweet });
                 })
             );
         }
@@ -41886,67 +41885,8 @@ exports.isStrictMode = isStrictMode;
 
 
 /***/ }),
-/* 96 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__styles__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var props = function props(state) {
-    return {
-        text: state.text
-    };
-};
-
-var Event = function (_React$Component) {
-    _inherits(Event, _React$Component);
-
-    function Event(props) {
-        _classCallCheck(this, Event);
-
-        return _possibleConstructorReturn(this, (Event.__proto__ || Object.getPrototypeOf(Event)).call(this, props));
-    }
-
-    _createClass(Event, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/images/twitter-icon.png' })
-            );
-        }
-    }]);
-
-    return Event;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])(props, {
-    // 
-})(Event));
-
-/***/ }),
-/* 97 */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
+/* 96 */,
+/* 97 */,
 /* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -63505,6 +63445,106 @@ module.exports = function(module) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles__ = __webpack_require__(117);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var props = function props(state) {
+    return {
+        text: state.text
+    };
+};
+
+var TwitterEvent = function (_React$Component) {
+    _inherits(TwitterEvent, _React$Component);
+
+    function TwitterEvent(props) {
+        _classCallCheck(this, TwitterEvent);
+
+        var _this = _possibleConstructorReturn(this, (TwitterEvent.__proto__ || Object.getPrototypeOf(TwitterEvent)).call(this, props));
+
+        _this.handleMouseHover = _this.handleMouseHover.bind(_this);
+        _this.state = {
+            isHovering: false
+        };
+        return _this;
+    }
+
+    _createClass(TwitterEvent, [{
+        key: 'handleMouseHover',
+        value: function handleMouseHover() {
+            this.setState(this.toggleHoverState);
+        }
+    }, {
+        key: 'toggleHoverState',
+        value: function toggleHoverState(state) {
+            return {
+                isHovering: !state.isHovering
+            };
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__styles__["a" /* StyledImg */], { src: '/images/twitter-icon.png', onMouseEnter: this.handleMouseHover, onMouseLeave: this.handleMouseHover }),
+                this.state.isHovering && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    null,
+                    this.props.props.text
+                )
+            );
+        }
+    }]);
+
+    return TwitterEvent;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])(props, {
+    // 
+})(TwitterEvent));
+
+/***/ }),
+/* 117 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StyledImg; });
+/* unused harmony export Test */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components__ = __webpack_require__(11);
+var _templateObject = _taggedTemplateLiteral(['\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n'], ['\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    width: 10px;\n    height: 10px;\n    background-color: red;\n'], ['\n    width: 10px;\n    height: 10px;\n    background-color: red;\n']);
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+var StyledImg = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].img(_templateObject);
+
+var Test = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].div(_templateObject2);
 
 /***/ })
 /******/ ]);

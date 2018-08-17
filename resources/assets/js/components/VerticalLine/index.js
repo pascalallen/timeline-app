@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {fetchAllTweets, fetchSingleTweet} from '../../actions/twitterActions';
 import {StyledDiv} from './styles';
-import Event from '../Event';
+import TwitterEvent from '../TwitterEvent';
 
 const props = (state) => ({
     allTweets: state.twitter.all,
@@ -39,8 +39,7 @@ class VerticalLine extends React.Component {
         return (
             <StyledDiv>
                 {this.props.allTweets && this.props.allTweets.map((tweet) => {
-                    return <Event key={tweet.id} props={tweet}/>
-                    // return <li key={tweet.id}>{tweet.text}</li>
+                    return <TwitterEvent key={tweet.id} props={tweet} />
                 })}
             </StyledDiv>
         );
