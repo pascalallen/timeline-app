@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {StyledDiv, StyledImg, Test} from './styles';
+import {StyledDiv, StyledImg, TweetText} from './styles';
 
 const props = (state) => ({
     text: state.text,
@@ -27,15 +27,12 @@ class TwitterEvent extends React.Component {
 
     render() {
         return (
-            <div>
+            <StyledDiv>
                 <StyledImg src="/images/twitter-icon.png" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover} />
-                {
-                this.state.isHovering &&
-                <div>
+                {this.state.isHovering && <TweetText>
                     {this.props.props.text}
-                </div>
-                }
-            </div>
+                </TweetText>}
+            </StyledDiv>
         );
     }
 }

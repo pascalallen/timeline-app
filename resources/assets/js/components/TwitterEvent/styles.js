@@ -6,8 +6,12 @@ export const StyledImg = styled.img`
     cursor: pointer;
 `;
 
-export const Test = styled.div`
-    width: 10px;
-    height: 10px;
-    background-color: red;
+export const StyledDiv = styled.div`
+    margin-left: -7px;
+    margin-bottom: 25px;
+`;
+
+export const TweetText = styled.div`
+    margin-left: 25px;
+    position: fixed;
 `;

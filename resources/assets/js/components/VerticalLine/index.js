@@ -38,6 +38,7 @@ class VerticalLine extends React.Component {
     render() {
         return (
             <StyledDiv>
+                {/* Show all tweets on timeline */}
                 {this.props.allTweets && this.props.allTweets.map((tweet) => {
                     return <TwitterEvent key={tweet.id} props={tweet} />
                 })}

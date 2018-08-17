@@ -63508,11 +63508,11 @@ var TwitterEvent = function (_React$Component) {
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
+                __WEBPACK_IMPORTED_MODULE_2__styles__["a" /* StyledDiv */],
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__styles__["a" /* StyledImg */], { src: '/images/twitter-icon.png', onMouseEnter: this.handleMouseHover, onMouseLeave: this.handleMouseHover }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__styles__["b" /* StyledImg */], { src: '/images/twitter-icon.png', onMouseEnter: this.handleMouseHover, onMouseLeave: this.handleMouseHover }),
                 this.state.isHovering && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
+                    __WEBPACK_IMPORTED_MODULE_2__styles__["c" /* TweetText */],
                     null,
                     this.props.props.text
                 )
@@ -63532,11 +63532,13 @@ var TwitterEvent = function (_React$Component) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StyledImg; });
-/* unused harmony export Test */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return StyledImg; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StyledDiv; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return TweetText; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components__ = __webpack_require__(11);
 var _templateObject = _taggedTemplateLiteral(['\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n'], ['\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    width: 10px;\n    height: 10px;\n    background-color: red;\n'], ['\n    width: 10px;\n    height: 10px;\n    background-color: red;\n']);
+    _templateObject2 = _taggedTemplateLiteral(['\n    margin-left: -7px;\n    margin-bottom: 25px;\n'], ['\n    margin-left: -7px;\n    margin-bottom: 25px;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    margin-left: 25px;\n    position: fixed;\n'], ['\n    margin-left: 25px;\n    position: fixed;\n']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -63544,7 +63546,9 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var StyledImg = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].img(_templateObject);
 
-var Test = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].div(_templateObject2);
+var StyledDiv = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].div(_templateObject2);
+
+var TweetText = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].div(_templateObject3);
 
 /***/ })
 /******/ ]);
