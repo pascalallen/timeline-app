@@ -1,5 +1,10 @@
 import styled from 'styled-components';
+import Subject from '../Subject/index';
 
-export const StyledDiv = styled.div`
-    background: papayawhip;
-`;
+export const SubjectLeft = styled(Subject)`
+    float: left;
+`; 
+
+export const SubjectRight = styled(Subject)`
+    float: right;
+`; 

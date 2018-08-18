@@ -1,27 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import ReactDOM from 'react-dom';
-import {StyledDiv} from './styles';
+import VerticalLine from '../VerticalLine';
+import Subject from '../Subject';
+import {SubjectLeft, SubjectRight} from './styles';
 
-export default class Main extends Component {
+class App extends React.Component {
     render() {
         return (
-            <StyledDiv className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">Main Component</div>
-
-                            <div className="card-body">
-                                I'm the Main component!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </StyledDiv>
+            <div className="container">
+                <SubjectLeft />
+                <VerticalLine />
+                <SubjectRight />
+            </div>
         );
     }
 }
 
-if (document.getElementById('root')) {
-    ReactDOM.render(<Main />, document.getElementById('root'));
-}
+export default App;
