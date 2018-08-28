@@ -15,7 +15,25 @@ class FacebookController extends Controller
      */
     public function index()
     {
-        //
+        $fb = new \Facebook\Facebook([
+            'app_id' => env('FACEBOOK_API_KEY'),
+            'app_secret' => env('FACEBOOK_API_SECRET'),
+            'default_graph_version' => 'v2.12',
+        ]);
+
+        try {
+            $fb->setDefaultAccessToken($fb->getApp()->getAccessToken());
+            $request = $fb->get('/DonaldTrump/posts?limit=5');
+            dd($request);
+        } catch(\Facebook\Exceptions\FacebookResponseException $e) {
+            // When Graph returns an error
+            echo 'Graph returned an error: ' . $e->getMessage();
+            exit;
+        } catch(\Facebook\Exceptions\FacebookSDKException $e) {
+            // When validation fails or other local issues
+            echo 'Facebook SDK returned an error: ' . $e->getMessage();
+            exit;
+        }
     }
 
     /**
